@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import SideBar from './components/side-bar';
+import MainPage from './components/main-page/main-page';
+
 import './App.css';
+import { useState } from 'react';
+import bg from './assets/bg.jpg'
 
 function App() {
+  const [select, setSelect]=useState("")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="lg:flex  py-10 md:px-48 px-5  "
+      style={{ backgroundImage: `url(${bg})` }}
+    >
+      <SideBar setSelect={setSelect} select={select} />
+      <MainPage />
     </div>
   );
 }
