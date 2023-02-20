@@ -2,7 +2,6 @@ import React from 'react'
 
 import WhatIDo from './what-i-do/What-i-do';
 
-import testImg from '../../assets/phone.svg'
 import responsiveIcon from '../../assets/responsive.png'
 import framWorkIcon from '../../assets/framwork.png'
 import cssIcon from '../../assets/css.png'
@@ -97,7 +96,7 @@ const MainPage = () => {
       <div className="grid sm:grid-cols-2 gap-12">
         <div>
           <h1 className="text-2xl mb-5 flex">
-            <img src={educationIcon} className="w-10 mr-4" />{" "}
+            <img src={educationIcon} alt="img" className="w-10 mr-4" />{" "}
             <span className='font-bold'>Education</span>
           </h1>
           <Education
@@ -122,7 +121,7 @@ const MainPage = () => {
         <div>
           <h1 className="text-2xl mb-5 flex">
             {" "}
-            <img src={experienceIcon} className="w-10 mr-4" />{" "}
+            <img alt='icon' src={experienceIcon} className="w-10 mr-4" />{" "}
             <span className="font-bold">Experience</span>
           </h1>
           <Education

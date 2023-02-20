@@ -18,25 +18,34 @@ const SideBar = ({ setSelect, select }) => {
     <div className=" wraper bg-white  p-5 mb-5 w-full lg:w-96 rounded-md   flex  flex-col  items-center mr-10 h-max ">
       {/* /////////////// profile section //////////////// */}
       <div className="p-4 bg-blue-400 rounded-2xl hover:bg-blue-500 ">
-        <img src={profilePicture} className="w-40 h-40 rounded-full  " />
+        <img
+          alt="icon"
+          src={profilePicture}
+          className="w-40 h-40 rounded-full  "
+        />
       </div>
       {/* ////////////////// social Section  ///////////////// */}
       <div className="pt-5 flex flex-col   justify-center items-center">
         <span className="font-bold  text-2xl">Muhammad Faizan</span>
         <span>React Js Developer</span>
         <div className="flex space-x-2 items-center mt-4">
-          <a href="https://github.com/RajaFaizan55" target={"_blank"}>
+          <a
+            href="https://github.com/RajaFaizan55"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <div className="bg-gray-200 p-1 rounded-lg cursor-pointer hover:bg-gray-300 ">
-              <img src={gitGif} className="rounded-full w-10 " />
+              <img alt="icon" src={gitGif} className="rounded-full w-10 " />
             </div>
           </a>
 
           <a
             href={"https://www.linkedin.com/in/raja-faizan-3a247a176/"}
             target="_blank"
+            rel="noreferrer"
           >
             <div className="bg-gray-200 p-1 rounded-lg cursor-pointer  hover:bg-gray-300 ">
-              <img src={linkdinGif} className="rounded-full w-10" />
+              <img alt="icon" src={linkdinGif} className="rounded-full w-10" />
             </div>
           </a>
         </div>
@@ -149,9 +158,9 @@ const SideBar = ({ setSelect, select }) => {
         <Contact icon={calandarIcon} title={"Birthday"} val={"May 19, 1998"} />
       </div>
       {/* /////////////////// download cv button///////////////// */}
-      <a href={cv} target="_blank">
+      <a href={cv} target="_blank" rel='noreferrer' >
         <div className="bg-blue-400 hover:bg-blue-500 p-2 rounded-md mt-5  flex items-center cursor-pointer ">
-          <img src={downloadIcon} className="w-5 mr-3" />
+          <img alt="icon" src={downloadIcon} className="w-5 mr-3" />
           <button className="font-bold text-white">Download CV</button>
         </div>
       </a>
