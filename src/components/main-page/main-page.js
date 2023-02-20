@@ -12,6 +12,7 @@ import educationIcon from '../../assets/education.svg'
 import experienceIcon from "../../assets/experience.svg";
 import Education from './education';
 import ProgressBar from './progress-bar';
+import Tag from './tag';
 
 const MainPage = () => {
   return (
@@ -21,10 +22,9 @@ const MainPage = () => {
         Over the past 1 year, I have worked with clients and big Companies for
         their startups to help them reach their goals with 100% satisfaction.
         Ranging from basic custom website projects (HTML,CSS, Javascript,
-        Bootstrap, Jquery) to high-end large Scale Web App projects as Single
-        Page Apps (AngularJS, VueJS), I worked on variety of shop Stores
-        (VueStoreFront), school Learning Management Systems(LMS), Brand Websites
-        and cool animated websites.
+        Bootstrap and Tailwind) to high-end large Scale Web App projects as
+        Single Page Apps (React.js), I worked on variety of projects including
+        ERP , Political pixels etc.
       </p>
       <ul className="list-disc ml-6 leading-10 mb-7">
         <li>
@@ -86,7 +86,7 @@ const MainPage = () => {
           icon={developmentIcon}
           title={"Web Development"}
           desc={
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat. "
+            "As a skilled web developer, I possess expertise in a range of modern web development technologies including HTML, CSS, JavaScript, React.js, Tailwind CSS, and Sass. With these tools, I am capable of crafting high-quality, visually stunning websites that are both functional and user-friendly"
           }
           bgColor={"#F3FAFF"}
         />
@@ -97,7 +97,7 @@ const MainPage = () => {
         <div>
           <h1 className="text-2xl mb-5 flex">
             <img src={educationIcon} alt="img" className="w-10 mr-4" />{" "}
-            <span className='font-bold'>Education</span>
+            <span className="font-bold">Education</span>
           </h1>
           <Education
             bgColor={"#FFF4F4"}
@@ -121,7 +121,7 @@ const MainPage = () => {
         <div>
           <h1 className="text-2xl mb-5 flex">
             {" "}
-            <img alt='icon' src={experienceIcon} className="w-10 mr-4" />{" "}
+            <img alt="icon" src={experienceIcon} className="w-10 mr-4" />{" "}
             <span className="font-bold">Experience</span>
           </h1>
           <Education
@@ -146,16 +146,26 @@ const MainPage = () => {
       </div>
 
       {/* ///////// skills /////// */}
-      <div className="grid sm:grid-cols-2 gap-12  " >
+      <div className="grid sm:grid-cols-2 gap-12  ">
         <div>
           <h1 className="font-bold text-4xl my-10 ">Working Skills</h1>
+          <ProgressBar title={"React js"} percentage={"80%"} />
           <ProgressBar title={"Html"} percentage={"80%"} />
-          <ProgressBar title={"Html"} percentage={"80%"} />
-          <ProgressBar title={"Html"} percentage={"80%"} />
-          <ProgressBar title={"Html"} percentage={"80%"} />
+          <ProgressBar title={"Css"} percentage={"80%"} />
+          <ProgressBar title={"Tailwind"} percentage={"80%"} />
+          <ProgressBar title={"Bootstrap"} percentage={"70%"} />
         </div>
         <div>
           <h1 className="font-bold text-4xl my-10 ">Knowledges</h1>
+          <div className='flex flex-wrap'>
+            <Tag text={"React-Hook-Form"} />
+            <Tag text={"Redux"} />
+            <Tag text={"Redux toolkit"} />
+            <Tag text={"Sass"} />
+            <Tag text={"Javascript"} />
+            <Tag text={"Typescript"} />
+            <Tag text={"Git"} />
+          </div>
         </div>
       </div>
     </div>
