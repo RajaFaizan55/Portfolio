@@ -16,8 +16,10 @@ import Tag from './tag';
 
 const MainPage = () => {
   return (
-    <div className=" wraper bg-white flex-1  rounded-md py-5 px-10 justify-start ">
-      <h1 className="font-bold text-4xl mb-10 ">About Me</h1>
+    <div className=" wraper ml-26rem bg-white flex-1  rounded-md py-5 px-10 justify-start ">
+      <h1 className="font-bold text-4xl mb-10 " id="about-me">
+        About Me
+      </h1>
       <p className="tracking-normal leading-8 text-justify">
         Over the past 1 year, I have worked with clients and big Companies for
         their startups to help them reach their goals with 100% satisfaction.
@@ -39,7 +41,9 @@ const MainPage = () => {
         My aim is to bring across your message and identity in the most creative
         way. I created websites for many famous brand companies.
       </span>
-      <h1 className="font-bold text-4xl my-10 ">What I Do</h1>
+      <h1 className="font-bold text-4xl my-10 " id="what-i-do">
+        What I Do
+      </h1>
       {/* ////////// What i do section //////////// */}
       <div className="grid  sm:grid-cols-2 gap-12">
         <WhatIDo
@@ -91,7 +95,10 @@ const MainPage = () => {
           bgColor={"#F3FAFF"}
         />
       </div>
-      <h1 className="font-bold text-4xl my-10 ">Resume</h1>
+      <h1 className="font-bold text-4xl my-10 " id="resume">
+        {" "}
+        Resume
+      </h1>
       {/* ///////// Resume section ////////// */}
       <div className="grid sm:grid-cols-2 gap-12">
         <div>
@@ -157,7 +164,7 @@ const MainPage = () => {
         </div>
         <div>
           <h1 className="font-bold text-4xl my-10 ">Knowledges</h1>
-          <div className='flex flex-wrap'>
+          <div className="flex flex-wrap">
             <Tag text={"React-Hook-Form"} />
             <Tag text={"Redux"} />
             <Tag text={"Redux toolkit"} />

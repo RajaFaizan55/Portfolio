@@ -15,7 +15,7 @@ import "./sideBar.css";
 
 const SideBar = ({ setSelect, select }) => {
   return (
-    <div className=" wraper bg-white  p-5 mb-5 w-full lg:w-96 rounded-md   flex  flex-col  items-center mr-10 h-max ">
+    <div className=" wraper bg-white  p-5 mb-5 w-full lg:w-96 rounded-md   flex  flex-col  items-center mr-10 h-max fixed ">
       {/* /////////////// profile section //////////////// */}
       <div className="p-4 bg-blue-400 rounded-2xl hover:bg-blue-500 ">
         <img
@@ -52,6 +52,8 @@ const SideBar = ({ setSelect, select }) => {
       </div>
       {/* ///////////////// resume section //////////////////// */}
       <div className="border p-3 w-full my-5 rounded-md flex justify-center space-x-4   ">
+        <a href="#about-me" rel="noreferrer">
+
         <div
           className={` ${
             select !== "about" && "hover:bg-gray-300"
@@ -82,6 +84,10 @@ const SideBar = ({ setSelect, select }) => {
             About
           </span>
         </div>
+        </a>
+
+        <a href="#resume" rel="noreferrer">
+
         <div
           className={` ${
             select !== "resume" && "hover:bg-gray-300"
@@ -112,6 +118,10 @@ const SideBar = ({ setSelect, select }) => {
             Resume
           </span>
         </div>
+        </a>
+
+        <a href="#what-i-do" rel="noreferrer">
+          
         <div
           className={` ${
             select !== "work" && "hover:bg-gray-300"
@@ -140,6 +150,7 @@ const SideBar = ({ setSelect, select }) => {
             Work
           </span>
         </div>
+        </a>
       </div>
 
       {/* /////////////////// contact section ////////////// */}
@@ -158,7 +169,7 @@ const SideBar = ({ setSelect, select }) => {
         <Contact icon={calandarIcon} title={"Birthday"} val={"May 19, 1998"} />
       </div>
       {/* /////////////////// download cv button///////////////// */}
-      <a href={cv} target="_blank" rel='noreferrer' >
+      <a href={cv} target="_blank" rel="noreferrer">
         <div className="bg-blue-400 hover:bg-blue-500 p-2 rounded-md mt-5  flex items-center cursor-pointer ">
           <img alt="icon" src={downloadIcon} className="w-5 mr-3" />
           <button className="font-bold text-white">Download CV</button>
