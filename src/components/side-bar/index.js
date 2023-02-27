@@ -15,7 +15,7 @@ import "./sideBar.css";
 
 const SideBar = ({ setSelect, select }) => {
   return (
-    <div className=" wraper bg-white  p-5 mb-5 w-full lg:w-96 rounded-md   flex  flex-col  items-center mr-10 h-max fixed ">
+    <div className=" wraper bg-white   p-5 mb-5 w-full 2xl:w-96 rounded-md   flex  flex-col  items-center mr-10 h-max  ">
       {/* /////////////// profile section //////////////// */}
       <div className="p-4 bg-blue-400 rounded-2xl hover:bg-blue-500 ">
         <img
