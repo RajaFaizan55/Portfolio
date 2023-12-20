@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const ProgressBar = ({ title, percentage }) => {
   return (
@@ -10,11 +10,11 @@ const ProgressBar = ({ title, percentage }) => {
       <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-200">
         <div
           className="bg-purple-600 h-2.5 rounded-full dark:bg-purple-500"
-          style={{ width: "80%" }}
+          style={{ width: "90%" }}
         ></div>
       </div>
     </div>
   );
 };
 
-export default ProgressBar
+export default ProgressBar;

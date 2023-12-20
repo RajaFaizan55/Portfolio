@@ -26,12 +26,12 @@ const MainPage = () => {
             About Me
           </h1>
           <p className="tracking-normal leading-8 text-justify">
-            Over the past 1 year, I have worked with clients and big Companies
+            Over the past 2 year, I have worked with clients and big Companies
             for their startups to help them reach their goals with 100%
             satisfaction. Ranging from basic custom website projects (HTML,CSS,
             Javascript, Bootstrap and Tailwind) to high-end large Scale Web App
-            projects as Single Page Apps (React.js), I worked on variety of
-            projects including ERP , Political pixels etc.
+            projects as Single Page Apps (React.js/Next.js), I worked on variety
+            of projects including ERP , Political pixels etc.
           </p>
           <ul className="list-disc ml-6 leading-10 mb-7">
             <li>
@@ -39,7 +39,8 @@ const MainPage = () => {
               and CSS/Bootstrap/Tailwind.
             </li>
             <li>
-              I can create single page application using React.js and Redux.
+              I can create single page application using React.js , Next.js ,
+              Redux and Redux Toolkit.
             </li>
             <li>Strong command of Sass and Tailwind.</li>
             <li>Knowledge with version control systems (Git).</li>
@@ -65,7 +66,7 @@ const MainPage = () => {
               icon={framWorkIcon}
               title={"Frameworks"}
               desc={
-                "I have expertise in following frontend frameworks. React.js and some knowledge about Vue.js. "
+                "I have expertise in following frontend frameworks. React.js, Next.js some knowledge about Vue.js. "
               }
               bgColor={"#E5E2D9"}
             />
@@ -144,21 +145,21 @@ const MainPage = () => {
               </h1>
               <Education
                 bgColor={"#EEF5FA"}
-                date={"1 Year"}
+                date={"1.1 Years"}
                 title={"React js Developer"}
                 desc={"SprintX"}
               />
               <Education
                 bgColor={"#F2F4FF"}
-                date={"6 Months"}
+                date={"8 Months"}
                 title={"Frontend Developer"}
                 desc={"The AppMakers"}
               />
               <Education
                 bgColor={"#EEF5FA"}
-                date={"2 Months"}
+                date={"3 Months"}
                 title={"Frontend Developer"}
-                desc={"The Fabolous"}
+                desc={"LightFlow Corporation (dubai)"}
               />
             </div>
           </div>
@@ -176,9 +177,12 @@ const MainPage = () => {
             <div>
               <h1 className="font-bold text-4xl my-10 ">Knowledges</h1>
               <div className="flex flex-wrap">
+                <Tag text={"Next.js"} />
                 <Tag text={"React-Hook-Form"} />
+                <Tag text={"Strip Integration"} />
                 <Tag text={"Redux"} />
                 <Tag text={"Redux toolkit"} />
+                <Tag text={"Redux Toolkit Query"} />
                 <Tag text={"Sass"} />
                 <Tag text={"Javascript"} />
                 <Tag text={"Typescript"} />
