@@ -154,7 +154,7 @@ const SideBar = ({ setSelect, select }) => {
 
       {/* /////////////////// contact section ////////////// */}
       <div className="border p-5 w-full rounded-md bg-gray-100 ">
-        <Contact icon={contactIcon} title={"Phone"} val={"+92 332 8494808"} />
+        <Contact icon={contactIcon} title={"Phone"} val={"+44 7919106623"} />
         <Contact
           icon={mailIcon}
           title={"Email"}
@@ -163,7 +163,7 @@ const SideBar = ({ setSelect, select }) => {
         <Contact
           icon={locationIcon}
           title={"Location"}
-          val={"Lahore, Pakistan"}
+          val={"London, England"}
         />
         <Contact icon={calandarIcon} title={"Birthday"} val={"May 19, 1998"} />
       </div>
